@@ -82,7 +82,7 @@ This guide walks you through joining the **Aztec validator set** and earning the
 
 ## 🛠️ Troubleshooting
 
-- You might encounter minor issues — retry if needed.
+- You might encounter minor issues, just try again.
 - Remember, **this is a testnet**: the goal is to test, break, and improve the system.
 - More countries are now supported on ZK Passport, so check again if you weren’t eligible before.
 
@@ -90,3 +90,25 @@ This guide walks you through joining the **Aztec validator set** and earning the
 
 Made it through? Welcome to the testnet validator set.
 Now go decentralize with style.
+
+
+## Updating Your Aztec Node
+
+This guide covers how to update your Aztec node using **Docker Compose** or **CLI** methods.
+
+---
+
+### 🚀 Docker Compose Method
+
+#### 1. Stop the Node
+
+```bash
+# Option A: Stop using image name
+docker stop $(docker ps -q --filter "ancestor=aztecprotocol/aztec") \
+  && docker rm $(docker ps -a -q --filter "ancestor=aztecprotocol/aztec")
+
+# Option B: Stop using docker compose
+cd aztec
+docker compose down -v
+
+
