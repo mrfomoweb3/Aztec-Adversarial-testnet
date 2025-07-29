@@ -91,16 +91,17 @@ This guide walks you through joining the **Aztec validator set** and earning the
 Made it through? Welcome to the testnet validator set.
 Now go decentralize with style.
 
+---
 
-## Updating Your Aztec Node
+# Aztec Node Update Guide (Version 1.2.0)
 
-This guide covers how to update your Aztec node using **Docker Compose** or **CLI** methods.
+This guide explains how to **update your Aztec node** using either Docker Compose or CLI methods. It includes steps to stop the node, update CLI tools, remove old data, and restart the node correctly.
 
 ---
 
-### 🚀 Docker Compose Method
+## 🚀 Docker Compose Method
 
-#### 1. Stop the Node
+### 1. Stop the Node
 
 ```bash
 # Option A: Stop using image name
@@ -110,5 +111,76 @@ docker stop $(docker ps -q --filter "ancestor=aztecprotocol/aztec") \
 # Option B: Stop using docker compose
 cd aztec
 docker compose down -v
+```
+
+### 2. Update CLI Tools
+
+```bash
+source ~/.bashrc
+aztec-up 1.2.0
+```
+
+### 3. Delete Old Data
+
+```bash
+rm -rf ~/.aztec/alpha-testnet/data/
+```
+
+### 4. Rerun the Node
+
+```bash
+docker compose up -d
+```
+
+> ✅ **Note:** Ensure you're in the `aztec` directory where `docker-compose.yml` exists.  
+> For full setup instructions, see the [Aztec Docker Guide](#).
+
+---
+
+## 🧑‍💻 CLI Method
+
+### 1. Stop the Node
+
+```bash
+# Kill all aztec-related screen sessions
+screen -ls | grep -i aztec | awk '{print $1}' | xargs -I {} screen -X -S {} quit
+```
+
+> Or manually terminate the screen session running your node.
+
+### 2. Update CLI Tools
+
+```bash
+source ~/.bashrc
+aztec-up 1.2.0
+```
+
+### 3. Delete Old Data
+
+```bash
+rm -rf ~/.aztec/alpha-testnet/data/
+```
+
+### 4. Rerun the Node
+
+```bash
+aztec start --node --archiver --sequencer \
+  --network alpha-testnet \
+  --l1-rpc-urls RPC_URL \
+  --l1-consensus-host-urls BEACON_URL \
+  --sequencer.validatorPrivateKey 0xYourPrivateKey \
+  --sequencer.coinbase 0xYourAddress \
+  --p2p.p2pIp IP
+```
+
+### Replace the placeholders:
+
+- `RPC_URL`: Your Layer 1 RPC endpoint  
+- `BEACON_URL`: Your consensus layer Beacon endpoint  
+- `0xYourPrivateKey`: Your EVM private key  
+- `0xYourAddress`: Your EVM public address  
+- `IP`: Your server’s public IP address
+
+---
 
 
