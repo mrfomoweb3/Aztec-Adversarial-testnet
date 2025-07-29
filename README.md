@@ -25,6 +25,9 @@ This guide walks you through joining the **Aztec validator set** and earning the
    - Issuing Country
    - Issuing Date
    - Expiry Date
+<img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/4f734042-9ceb-4920-9990-282e252162fc" />
+
+
 4. **Connect your wallet**
 <img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/f2c952d8-d9c1-48a5-aa0e-88964b22e9b4" />
 
@@ -36,7 +39,9 @@ This guide walks you through joining the **Aztec validator set** and earning the
 
 - Use the **ZK Passport app** to verify you're human.
 - No personal data is stored — your proof remains private (ZK tech FTW).
-<img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/4f734042-9ceb-4920-9990-282e252162fc" />
+<img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/db3bbe89-9031-42ca-893c-8803ece4a931" />
+
+
 
 ---
 
