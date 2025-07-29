@@ -7,7 +7,7 @@ This guide walks you through joining the **Aztec validator set** and earning the
 
 ---
 
-## 🧰 What You’ll Need
+##  What You’ll Need
 
 - [ZK Passport App](https://passport.aztec.network)
 - Sepolia Testnet ETH  
@@ -17,7 +17,7 @@ This guide walks you through joining the **Aztec validator set** and earning the
 
 ---
 
-## 🪪 Step 1: Verify Identity with ZK Passport
+## Step 1: Verify Identity with ZK Passport
 
 1. Go to [testnet.aztec.network](https://testnet.aztec.network)
 2. Click **“Join Validator Set”**
@@ -40,7 +40,7 @@ This guide walks you through joining the **Aztec validator set** and earning the
 
 ---
 
-## ✅ Step 2: Verify Humanity
+##  Step 2: Verify Humanity
 
 - Use the **ZK Passport app** to verify you're human.
 - No personal data is stored — your proof remains private (ZK tech FTW).
@@ -50,7 +50,7 @@ This guide walks you through joining the **Aztec validator set** and earning the
 
 ---
 
-## 🧱 Step 3: Register as Validator
+## Step 3: Register as Validator
 
 - Once verified, click **Register Validator**
 - A transaction window will pop up
@@ -61,7 +61,7 @@ This guide walks you through joining the **Aztec validator set** and earning the
 
 ---
 
-## 🛡 Step 4: Claim Your Discord Role
+##  Step 4: Claim Your Discord Role
 
 - Enter your **Discord username**
 - Optionally, provide your **company name**
@@ -70,7 +70,7 @@ This guide walks you through joining the **Aztec validator set** and earning the
 
 ---
 
-## 🎉 Final Steps
+##  Final Steps
 
 - View your validator dashboard:  
   https://dashtec.xyz
@@ -99,7 +99,7 @@ This guide explains how to **update your Aztec node** using either Docker Compos
 
 ---
 
-## 🚀 Docker Compose Method
+##  Docker Compose Method
 
 ### 1. Stop the Node
 
@@ -137,7 +137,7 @@ docker compose up -d
 
 ---
 
-## 🧑‍💻 CLI Method
+##  CLI Method
 
 ### 1. Stop the Node
 
@@ -177,7 +177,7 @@ aztec start --node --archiver --sequencer \
 
 - `RPC_URL`: Your Layer 1 RPC endpoint  
 - `BEACON_URL`: Your consensus layer Beacon endpoint  
-- `0xYourPrivateKey`: Your EVM private key  
+- `0xYourPrivateKey`: Your EVM private key (Don't share to anyone)
 - `0xYourAddress`: Your EVM public address  
 - `IP`: Your server’s public IP address
 
