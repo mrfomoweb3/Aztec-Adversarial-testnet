@@ -21,6 +21,9 @@ This guide walks you through joining the **Aztec validator set** and earning the
 
 1. Go to [testnet.aztec.network](https://testnet.aztec.network)
 2. Click **“Join Validator Set”**
+
+<img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/f2c952d8-d9c1-48a5-aa0e-88964b22e9b4" />
+
 3. Confirm your ID eligibility:
    - Issuing Country
    - Issuing Date
@@ -29,7 +32,9 @@ This guide walks you through joining the **Aztec validator set** and earning the
 
 
 4. **Connect your wallet**
-<img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/f2c952d8-d9c1-48a5-aa0e-88964b22e9b4" />
+
+
+<img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/e3822f47-193b-49d8-a58a-5acac81abf25" />
 
 > ⚠️ Note: Aztec allows only one passport per testnet.
 
